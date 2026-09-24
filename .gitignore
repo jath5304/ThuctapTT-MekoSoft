@@ -1,0 +1,48 @@
+# ============================================
+#  .gitignore cho dự án ThuctapTT - MekoSoft
+# ============================================
+
+# --- File ZIP lớn (>100MB, không thể push lên GitHub) ---
+*.zip
+*.tar.gz
+*.war
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+*.egg-info/
+
+# --- Moodle Docker (chỉ giữ Dockerfile, docker-compose.yml, scripts/) ---
+# Không push source code Moodle (clone riêng từ moodle.git)
+moodle-test/moodle/
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Thông tin nhạy cảm (không push lên GitHub công khai) ---
+config.php
+*.env
+secrets.txt
+
+# --- Hệ điều hành ---
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# --- IDE ---
+.idea/
+.vscode/
+*.swp
+
+# --- Liferay (setup phức tạp, portal.zip quá lớn) ---
+liferay-6.2/liferay-portal-tomcat-*.zip
+liferay-6.2/data/
+liferay-6.2/logs/
+
+# --- Tailieu tham khao (không thuộc code) ---
+taileuTT/
